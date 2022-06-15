@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{8A4FA01F-4D86-4D88-B16C-236771EFE125}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Contexts/MysqlContext.cs">
+    <Files>
+      <File FileName="Program.cs" Line="16" Column="1" />
+      <File FileName="Controllers/ConsumerController.cs" Line="49" Column="1" />
+      <File FileName="Services/EventTransactionService.cs" Line="24" Column="1" />
+      <File FileName="Converters/EventConverter.cs" Line="12" Column="1" />
+      <File FileName="Models/Event.cs" />
+      <File FileName="Services/EventService.cs" />
+      <File FileName="Models/ClientOTP.cs" />
+      <File FileName="Converters/ClientOTPConverter.cs" />
+      <File FileName="Converters/ClientConverter.cs" />
+      <File FileName="DAO/EventTransactionDAO.cs" Line="34" Column="38" />
+      <File FileName="Contexts/MysqlContext.cs" Line="31" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ConsumerApp" expanded="True">
+            <Node name="ConsumerApp" expanded="True">
+              <Node name="Contexts" expanded="True">
+                <Node name="MysqlContext.cs" selected="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Converters" expanded="True" />
+              <Node name="DAO" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ConsumerApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/gabrieldantas/Documents/Trabalho/Safra/POC/poc-cenario-carried-notification/ConsumerOTPSimulator/ConsumerApp/Program.cs" relfile="Program.cs" line="11" column="1" />
+      <Breakpoint file="/Users/gabrieldantas/Documents/Trabalho/Safra/POC/poc-cenario-carried-notification/ConsumerOTPSimulator/ConsumerApp/Controllers/ConsumerController.cs" relfile="Controllers/ConsumerController.cs" line="49" column="1" />
+      <Breakpoint file="/Users/gabrieldantas/Documents/Trabalho/Safra/POC/poc-cenario-carried-notification/ConsumerOTPSimulator/ConsumerApp/Services/EventTransactionService.cs" relfile="Services/EventTransactionService.cs" line="15" column="1" />
+      <Breakpoint file="/Users/gabrieldantas/Documents/Trabalho/Safra/POC/poc-cenario-carried-notification/ConsumerOTPSimulator/ConsumerApp/Converters/EventConverter.cs" relfile="Converters/EventConverter.cs" line="8" column="1" />
+      <Breakpoint file="/Users/gabrieldantas/Documents/Trabalho/Safra/POC/poc-cenario-carried-notification/ConsumerOTPSimulator/ConsumerApp/DAO/EventTransactionDAO.cs" relfile="DAO/EventTransactionDAO.cs" line="34" column="1" />
+      <Breakpoint file="/Users/gabrieldantas/Documents/Trabalho/Safra/POC/poc-cenario-carried-notification/ConsumerOTPSimulator/ConsumerApp/Services/EventTransactionService.cs" relfile="Services/EventTransactionService.cs" line="34" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

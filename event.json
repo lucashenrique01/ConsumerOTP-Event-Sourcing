@@ -1,0 +1,24 @@
+
+{
+    "id": "ac47faa1-3f11-4d3e-8e53-41e29cdf4b0c", 
+    "specVersion": "1.0", 
+    "source": "/product/domain/subdomain/service", 
+    "type": "br.com.example.correctTopic", 
+    "time": "2022-03-22T17:41:02",
+    "subject": "OTP canais terceiros(Whatsapp, SMS, email)", 
+    "correlationID": "", 
+    "dataContentType": "application/json", 
+    "data":{
+        "pocType": "carried_state_transfer",
+        "cliente": {
+            "idCliente": "ab6de74e-e4e9-4e41-8108-33ab05247cce",
+            "nomeCliente": "XPTO",
+            "documentoIdentificacao": "123.456.789-10",
+            "celular" : "1195956595",
+            "email" : "email@email.com"
+        },
+        "escolhaEnvio" : "whatsapp",
+        "canalSolicitante" : "AG5",
+        "idTransacao" : "bb895432-56f6-4f11-aadf-feff181d8e4f"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Contexts",
+    "\\Controllers",
+    "\\Converters",
+    "\\DAO",
+    "\\Models",
+    "\\Services"
+  ],
+  "SelectedNode": "\\Services\\EventService.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,20 @@
+version: '3.2'
+
+services:
+
+  consumer_otp:
+    build: .
+    container_name: consumer_otp
+    hostname: consumer_otp
+    environment:
+      - BROKER_HOST=broker:29092
+      - TOPIC_NAME=br.com.example.correctTopic
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password      
+      - MYSQL_DATABASE=dbEvent
+      - MYSQL_SERVER=db
+
+networks: 
+  default: 
+    external: 
+      name: kafka_confluent_network
