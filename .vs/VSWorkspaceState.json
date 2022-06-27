@@ -4,10 +4,11 @@
     "\\ConsumerApp",
     "\\ConsumerApp\\Contexts",
     "\\ConsumerApp\\Controllers",
+    "\\ConsumerApp\\Converters",
     "\\ConsumerApp\\DAO",
     "\\ConsumerApp\\Models",
     "\\ConsumerApp\\Services"
   ],
-  "SelectedNode": "\\ConsumerApp\\Program.cs",
+  "SelectedNode": "\\ConsumerApp\\ConsumerApp.sln",
   "PreviewInSolutionExplorer": false
 }

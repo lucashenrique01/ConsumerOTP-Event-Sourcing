@@ -12,14 +12,12 @@ namespace ConsumerApp.Services{
         private const int MINUTESADD = 5;
 
         public void save(Event eventt){
-            ClientOTP clientOTP = ClientOTPConverter.jsonToClientOTP(eventt.data.ToString());
             EventTransaction eventTransaction = new EventTransaction();
 
-            Client client = ClientConverter.jsonToClient(clientOTP.cliente.ToString());
             eventTransaction.token = tokenGenerate();
-            eventTransaction.idClient = client.idCliente;
-            eventTransaction.idTransacao = clientOTP.idTransacao;
-            eventTransaction.canalSolicitante = clientOTP.canalSolicitante;
+            eventTransaction.idClient = eventt.data.cliente.idCliente;
+            eventTransaction.idTransacao = eventt.data.idTransacao;
+            eventTransaction.canalSolicitante = eventt.data.canalSolicitante;
             eventTransaction.duracaoToken =  DateTime.Now.AddMinutes(MINUTESADD); 
             eventDAO.insertEventTransaction(eventTransaction);
         }

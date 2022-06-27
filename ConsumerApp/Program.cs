@@ -9,15 +9,11 @@ namespace ConsumerApp
     { 
         static void Main(string[] args)
         {   
-        //     EventTransactionService eventService = new EventTransactionService();
-        //     eventService.createTable();
-        //     BrokerContext brokerContext = new BrokerContext();
-        //     string topicName = brokerContext.getTopic();
+            EventTransactionService eventService = new EventTransactionService();
+            eventService.createTable();
             ConsumerController consumerController = new ConsumerController();
             MongoContext mongo = new MongoContext();             
             consumerController.ListeningMongo(mongo);
-            
-            
         }
     }
 }

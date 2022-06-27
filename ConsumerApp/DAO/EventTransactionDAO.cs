@@ -54,7 +54,7 @@ namespace EventDaoNamespace{
                         command.Parameters.AddWithValue("@canalSolicitante", newEvent.canalSolicitante);
                         command.Parameters.AddWithValue("@duracaoToken", newEvent.duracaoToken);
                         await command.ExecuteNonQueryAsync();
-                        Console.WriteLine("Um evento gravado");
+                        Console.WriteLine("Token gerado");
                     }
                 }
                 catch (Exception e)
@@ -68,5 +68,7 @@ namespace EventDaoNamespace{
                 }
             }
         }
+
+       
     }
 }

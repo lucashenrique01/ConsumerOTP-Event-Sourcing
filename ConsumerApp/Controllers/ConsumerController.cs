@@ -14,24 +14,27 @@ namespace ConsumerControllerNamespace
     class ConsumerController {
 
 
-        EventDAO eventDao = new EventDAO(); 
-        
-        public void ListeningMongo(MongoContext mongo){
-           
-            //while (true)
-                //{   
-                    
-                    MongoClient dbClient = new MongoClient($"{mongo.getHostMongo()}");
-                    var database = dbClient.GetDatabase($"{mongo.getDatabase()}"); 
-                    var collections = database.GetCollection<BsonDocument>($"teste");                    
-                    var documents = collections.Find(new BsonDocument()).ToList();
-                    foreach(BsonDocument doc in documents)
-                    {  
-                        //eventDao.insertEvent();
-                        Console.WriteLine(doc.GetType());
-                    }
-                //}
+        EventTransactionService eventTransactionService = new EventTransactionService();
+        MongoToObject mongoToObject = new MongoToObject();
 
+        public void ListeningMongo(MongoContext mongo){
+            MongoClient dbClient = new MongoClient($"{mongo.getHostMongo()}");
+            var database = dbClient.GetDatabase($"{mongo.getDatabase()}"); 
+            var collections = database.GetCollection<BsonDocument>($"{mongo.getCollection()}");  
+            int contador = 0;
+            while (true)
+             {                                        
+                    var documents = collections.Find(new BsonDocument()).ToList();
+                    try
+                    {
+                        for(int i = contador; contador < documents.Count; contador++)
+                        { 
+                            eventTransactionService.save(mongoToObject.convertToObject(documents[contador]));                        
+                        }                    
+                    }catch (Exception ex) { 
+                        Console.WriteLine("Erro ao tententar inserir um evento: " + ex.Message);    
+                    }finally { Thread.Sleep(20000);}                    
+             }
         }
     }
 }

@@ -31,7 +31,18 @@ namespace ConsumerApp.Contexts
             {
                 database = Environment.GetEnvironmentVariable("MONGO_DATABASE");
             } else {
-                return database = "teste";
+                return database = "eventDB";
+            }
+            return database;
+        }
+
+        public string getCollection(){
+            string database;
+            if (Environment.GetEnvironmentVariable("MONGO_COLLECTION") != null)
+            {
+                database = Environment.GetEnvironmentVariable("MONGO_COLLECTION");
+            } else {
+                return database = "br.com.example.correctTopic";
             }
             return database;
         }

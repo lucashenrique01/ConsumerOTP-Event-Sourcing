@@ -5,9 +5,8 @@
     "\\Controllers",
     "\\Converters",
     "\\DAO",
-    "\\Models",
-    "\\Services"
+    "\\Models"
   ],
-  "SelectedNode": "\\Services\\EventService.cs",
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
